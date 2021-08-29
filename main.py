@@ -9,15 +9,15 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 
 # Background
-background = pygame.image.load('background.jpg')
+background = pygame.image.load('img/background.jpg')
 
 # Title and Icon of the Game Window
 pygame.display.set_caption("Space Invaders")
-icon = pygame.image.load('game_icon.png')
+icon = pygame.image.load('img/game_icon.png')
 pygame.display.set_icon(icon)
 
 # Player
-playerImg = pygame.image.load('spaceship.png')
+playerImg = pygame.image.load('img/spaceship.png')
 playerX = 370  # x-axis co-ordinate of the player image
 playerY = 520  # y -axis co-ordinate of the player image
 playerX_change = 0
@@ -31,7 +31,7 @@ enemyY_change = []
 num_of_enemies = 6
 
 for i in range(num_of_enemies):
-    enemyImg.append(pygame.image.load('enemy.png'))
+    enemyImg.append(pygame.image.load('img/enemy.png'))
     enemyX.append(random.randint(0, 735))  # x-axis co-ordinate of the enemy image - randomly generated
     enemyY.append(random.randint(20, 100))  # y -axis co-ordinate of the enemy image - randomly generated
     enemyX_change.append(0.5)
@@ -47,7 +47,7 @@ textY = 10
 # Missile
 # Ready - Missile is stationary.
 # Fire - Missile is fired and is in motion.
-missileImg = pygame.image.load('missile.png')
+missileImg = pygame.image.load('img/missile.png')
 missileX = 0  # x-axis co-ordinate of the missile image
 missileY = 480  # y -axis co-ordinate of the missile image
 missileX_change = 0
